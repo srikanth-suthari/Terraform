@@ -3,13 +3,10 @@ variable "image_id" {
 	default = "ami-09c813fb71547fc4f"
 }
 
-
 variable "type" {
 	type = string
 	default = "t3.micro"
 }
-
-
 
 variable "ec2_tags" {
     type = map
@@ -53,8 +50,6 @@ variable "egress_protocol" {
 	default = "-1"
 
 }
-
-
 
 variable "egress_from_port" {
 	type = number
