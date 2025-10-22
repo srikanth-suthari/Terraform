@@ -1,2 +1,2 @@
 # Terraform
-IaC Learning Journey
+IaC Learning Journey.
