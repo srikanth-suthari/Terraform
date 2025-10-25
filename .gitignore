@@ -12,6 +12,6 @@ crash.log
 override.tf
 override.tf.json
 
-# Provider specific files (if any)
-# For example, if you're using AWS, you might have:
+# Provider specific files
 # .aws/credentials
+
