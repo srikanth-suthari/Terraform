@@ -1,17 +1,27 @@
-# Terraform generated files and directories
-.terraform/
-.terraform.lock.hcl
-*.tfstate
-*.tfstate.*backup
-*.tfplan
-.tfvars
-.tfvars.json
-crash.log
+module "catalogue" {
+    source = "../terraform-aws-instance"
+    # ami_id = "ami-09c813fb71547fc4f"
+    # sg_ids = ["sg-07c8acf3fa6b923fa"]
+    # instance_type = "t3.micro"
+    # tags = {
+    #     Name = "modu"
+    # }
 
-# Local overrides
-override.tf
-override.tf.json
+    ami_id = var.ami_id
+    sg_ids = var.sg_ids
+    instance_type = var.instance_type
+    tags = var.tags
+    
+}
 
-# Provider specific files (if any)
-# For example, if you're using AWS, you might have:
-# .aws/credentials
+output "pub_ip" {
+    value = module.catalogue.public_ip
+}
+
+output "priv_ip" {
+    value = module.catalogue.private_ip
+}
+
+output "id" {
+    value = module.catalogue.instance_id
+}
