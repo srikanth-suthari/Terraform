@@ -4,6 +4,7 @@
 #### Resource creation
 #### Variables
 #### Datatypes
+#### Conditions
 #### Loops
 ####  1. Count based
 ####  2. for_each
