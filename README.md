@@ -1,6 +1,6 @@
 # Terraform
 ## IaC Learning Journey.
-
+#### Terraform installation
 #### Resource creation
 #### Variables
 #### Datatypes
@@ -19,3 +19,4 @@
 ####  2. Remote state
 #### Locking statefile
 #### Modules
+#### EC2 Module
